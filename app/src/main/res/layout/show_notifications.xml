@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="13dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notifications_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ellipse" />
+
+        <TextView
+            android:id="@+id/notifications_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/notifications_image"
+            android:fontFamily="@font/poppins"
+            android:text="Hey, it’s time for lunch "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/notifications_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifications_name"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/notifications_image"
+            android:fontFamily="@font/poppins"
+            android:text="About 1 minutes ago "
+            android:textColor="#7B6F72"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/notifications_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:tint="#7B6F72" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/notifications_time"
+            android:layout_marginTop="13dp"
+            android:background="#7B6F72" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

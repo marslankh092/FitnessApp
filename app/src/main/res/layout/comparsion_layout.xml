@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    app:cardBackgroundColor="#F7F8F8"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    android:layout_marginTop="13dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/compaison_calndar_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/calendar"
+            android:layout_marginLeft="9dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/comparison_select_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/compaison_calndar_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:fontFamily="@font/poppins"
+            android:text="Select Month 1 "
+            android:textColor="#7B6F72"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/comparison_show_buttons"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:tint="#ADA4A5" />
+
+        <TextView
+            android:id="@+id/comparsion_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/comparison_show_buttons"
+            android:layout_marginRight="9dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins"
+            android:text="May "
+            android:textColor="#ADA4A5" />
+
+    </RelativeLayout>
+
+    
+
+</androidx.cardview.widget.CardView>

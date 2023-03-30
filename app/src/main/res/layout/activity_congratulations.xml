@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CongratulationsActivity">
+
+
+    <ImageView
+        android:id="@+id/congratulations_image"
+        android:layout_width="255dp"
+        android:layout_height="327dp"
+        android:src="@drawable/congratulations"
+        android:layout_marginTop="46dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <TextView
+        android:id="@+id/congratulations_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulations_image"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:text="Congratulations, You Have\nFinished Your Workout "
+        android:textColor="#1D1617"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/congratulations_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulations_text_1"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:text="Exercises is king and nutrition is queen. Combine the\ntwo and you will have a kingdom "
+        android:textColor="#7B6F72"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/congratulations_text_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulations_text_2"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:text="-Jack Lalanne "
+        android:textColor="#7B6F72"
+        android:textSize="13sp" />
+    
+    <Button
+        android:id="@+id/congratulations_back_buttons"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_linear_background"
+        android:textAllCaps="false"
+        android:padding="18dp"
+        android:fontFamily="@font/poppins"
+        android:text="BACK TO HOME "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
